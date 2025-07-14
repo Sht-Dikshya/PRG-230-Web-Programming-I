@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nested Divs Example</title>
+  <style>
+    .div1 {
+      background-color: lightblue;
+      padding: 50px;
+      border-width: 5px;
+      border-style: solid dashed dotted double;
+      border-color: black;
+    }
+    .div2 {
+      background-color: lightgreen;
+      padding: 50px;
+      border-width: 5px;
+      border-style: dashed dotted double solid;
+      border-color: blue;
+    }
+    .div3 {
+      background-color: lightyellow;
+      padding: 50px;
+      border-width: 5px;
+      border-style: dotted double solid dashed;
+      border-color: orange;
+    }
+    .div4 {
+      background-color: lightpink;
+      padding: 50px;
+      border-width: 5px;
+      border-style: double solid dashed none;
+      border-color: purple;
+    }
+    .div5 {
+      background-color: lightgray;
+      padding: 50px;
+      border-width: 5px;
+      border-style: none outset inset ridge;
+      border-color: navy;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="div1">
+    <div class="div2">
+      <div class="div3">
+        <div class="div4">
+          <div class="div5">
+            <p>This is the content inside the nested divs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
