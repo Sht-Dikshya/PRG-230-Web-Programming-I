@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Presidential Graduate School</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="week3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">PGS</div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">Faculty</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="section center-text">
+      <h1>Welcome to Presidential Graduate School</h1>
+      <p>PGS is affiliated with Westcliff University.</p>
+    </section>
+
+    <section class="section grid">
+      <div class="grid-text">
+        <h2>About Westcliff University</h2>
+        <p>
+          Westcliff University was established to provide quality education for students wishing to enter the expanding fields of Business and Education. 
+          Westcliff received its initial approval with the Bureau for Private Postsecondary Education in 1993 (www.bppe.ca.gov) and is accredited under 
+          both the WASC Senior College and University Commission (WSCUC) (www.wscuc.org), and the Accreditation Council for Business Schools and Programs (ACBSP). 
+          Westcliff is comprised of a College of Business, College of Education, College of Technology & Engineering, and Western State College of Law.  Westcliff 
+          University offers graduate and undergraduate certificates and degree programs intended to prepare students for immediate entry and advancement in their 
+          respective industries. While some schools only teach theoretical concepts, the programs at Westcliff University prepare students for the practical and 
+          theoretical elements required in the job market today. Westcliff University offers full-time working students a chance to enroll in 100% online courses 
+          or take courses onsite at its campuses in beautiful Southern California.
+        </p>
+      </div>
+
+      <div class="slideshow-wrapper">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="https://presidential.edu.np/file-manager/photos/1/Gallery/632974ffcf1c7.jpg" />
+          </div>
+          <div class="mySlides fade">
+            <img src="https://presidential.edu.np/file-manager/photos/1/p1.png" />
+          </div>
+          <div class="mySlides fade">
+            <img src="https://presidential.edu.np/file-manager/photos/1/p6.jpg" />
+          </div>
+          <div class="mySlides fade">
+            <img src="https://presidential.edu.np/file-manager/photos/1/Gallery/Academy%20Course/MScIT%20Course.jpg" />
+          </div>
+          <div class="mySlides fade">
+            <img src="https://english.makalukhabar.com/wp-content/uploads/2024/11/1-MK-17-scaled.jpg" />
+          </div>
+
+          <!-- Arrows -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Dots -->
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section center-text">
+      <h2>Visit Westcliff Website</h2>
+      <a href="https://www.westcliff.edu" target="_blank">Westcliff University Website</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-left">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5E3sniJ8O9NrdHOzpjWp-bWCgu2TJhtD3g&s" alt="College Logo" />
+        <p>&copy; 2025 Presidential Graduate School</p>
+        <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
+      </div>
+      <div class="footer-right">
+        <h4>Contact Us</h4>
+        <p>📞 01-5244306, 01-5245006, 9767658631, 9851343705</p>
+        <p>📧 <a href="mailto:info@presidential.edu.np">info@presidential.edu.np</a></p>
+        <p>📍 Bhakti Thapa Sadak, Thapagaun, New Baneshwor,<br />Kathmandu 44600</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</body>
+</html>

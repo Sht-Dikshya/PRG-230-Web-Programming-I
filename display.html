@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .box {
+      border: 1px solid #cbc4c4;
+      padding: 10px;
+    }
+
+    img {
+      width: 400px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Display & Visibility</h2>
+
+<div class="container">
+  <div class="box" id="box1">
+    <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg" alt="mayur">
+    <br>
+    <button onclick="hideDisplay()">Display: none</button>
+  </div>
+
+  <div class="box" id="box2">
+    <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg" alt="mayur">
+    <br>
+    <button onclick="hideVisibility()">Visibility: hidden</button>
+  </div>
+
+  <div class="box" id="box3">
+    <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?cs=srgb&dl=pexels-anjana-c-169994-674010.jpg&fm=jpg" alt="mayur">
+    <br>
+    <button onclick="resetAll()">Reset All</button>
+  </div>
+</div>
+
+<script>
+  function hideDisplay() {
+    document.getElementById("box1").style.display = "none";
+  }
+
+  function hideVisibility() {
+	document.getElementById("box2").style.visibility = "hidden";  }
+
+  function resetAll() {
+    document.getElementById("box1").style.display = "block";
+    document.getElementById("box2").style.visibility = "visible";
+    document.getElementById("box3").style.display = "block";
+    document.getElementById("box3").style.visibility = "visible";
+  }
+</script>
+
+</body>
+</html>

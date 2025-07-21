@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #003366;
+  color: #fff;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Container */
+.container {
+  display: grid;
+  gap: 30px;
+  padding: 30px;
+  max-width: 80%;
+  margin: auto;
+}
+
+/* Section */
+.section {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin-bottom: 40px;
+}
+.section h1{
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1e4166;
+} 
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #115294;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  padding: 20px;
+}
+.grid-text {
+  padding: 10px;
+  border: #333 solid 1px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+/* Slideshow */
+.slideshow-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* Footer */
+.footer {
+  background: #003366;
+  color: white;
+  padding: 30px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-left img {
+  width: 200px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
