@@ -4,8 +4,33 @@
   <meta charset="UTF-8">
   <title>NutriTime Product Page</title>
   <link rel="stylesheet" href="week2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="../hamburger.js" defer></script>
 </head>
 <body>
+
+  <!-- Header Start -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGrRMSmTZrUXWUpmTS6TgwEFsg82x3z8XcEeGAuOACxrVElR6272ZX0Hwyy-m-vvKjvBU&usqp=CAU" alt="logo" class="logo-icon">
+        NutriTime
+      </div>
+      <nav class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../nutritime5.html">Home</a></li>
+          <li><a href="week2.html" class="active">Products</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Header End -->
+
   <h1>NutriTime <span id="head">Product Page</span></h1>
 
   <div class="container">
@@ -39,5 +64,16 @@
       </a>
     </div>
   </div>
+
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 NutriTime. All rights reserved.</p>
+      <p>Made with ❤️ to promote smart eating habits</p>
+      <p>Contact us: support@nutritime.com</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
 </body>
 </html>
